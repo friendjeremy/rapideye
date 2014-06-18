@@ -1,0 +1,44 @@
+body {
+	background: url('../img/splashbg.jpg') no-repeat fixed center;
+	background-size: cover;
+}
+.splash {
+	padding-top: 10%;
+}
+
+.donate-form-div {
+	margin-top: 10%;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 1px;
+	padding-bottom: 10px;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+}
+.col-sm-6 {
+    float:none;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:-4px;
+}
+.donate-form {
+	color:	#FFFFFF;
+	font-size: 20px;
+}
+.donate-btn {
+	text-align: center;
+}
+select{
+		background-color: rgba(0, 0, 0, 0.2);
+}
+input{
+		background-color: rgba(0, 0, 0, 0.2);
+}
+@font-face {
+	font-family: Androgyne;
+	src: url(../fonts/androgyne_TB.otf);
+}
+h2 {
+	font-family: Androgyne;
+	font-size: 36px;
+}
