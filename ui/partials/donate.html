@@ -1,0 +1,75 @@
+<div class="container" fade-in>
+<div class="row">
+<div class="col-sm-2 col-md-3"></div>
+<div class="col-xs-12 col-sm-8 col-md-6">
+<div class="donate-form-div">
+    <div class="donate-form">
+        <h2 align="center">Donate Here!</h2>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_xclick-subscriptions">
+            <!--You will need to set the email to your PayPal email or Secure Merchant ID -->
+            <input type="hidden" name="business" value="charlie.welch@melodyofhope.org">
+            <input type="hidden" name="lc" value="US">
+            <input type="hidden" name="item_name" value="Donation to MoH">
+            <input type="hidden" name="item_number" value="1234">
+            <input type="hidden" name="no_note" value="1">
+            <input type="hidden" name="no_shipping" value="2">
+            <input type="hidden" name="src" value="1">
+            <input type="hidden" name="p3" value="1">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="bn" value="PP-SubscriptionsBF:btn_subscribeCC_LG.gif:NonHosted"><hr>
+            <table>
+            <tr><td>Donation amount: <br><input class="input-lg" name="a3" maxlength="60" size="4" placeholder="$"> </td></tr>
+            <tr><td>
+            <br><p>How many times would you like to donate?</p></td></tr><tr><td>
+            <select class="input-lg" name="srt">
+                <option value="1">One-Time Donation</option>
+                <option value="0">Continuous Recurring Donations</option>
+                <option value="2">2 Recurring Donations</option>
+                <option value="3">3 Recurring Donations</option>
+                <option value="4">4 Recurring Donations</option>
+                <option value="5">5 Recurring Donations</option>
+                <option value="6">6 Recurring Donations</option>
+                <option value="7">7 Recurring Donations</option>
+                <option value="8">8 Recurring Donations</option>
+                <option value="9">9 Recurring Donations</option>
+                <option value="10">10 Recurring Donations</option>
+                <option value="11">11 Recurring Donations</option>
+                <option value="12">12 Recurring Donations</option>
+            </select>
+            <hr>
+            If recurring, choose the frequency of your donations (otherwise ignore):
+            <br><br>Every 
+            <select class="input-lg" name="p3"> 
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="10">13</option>
+                <option value="11">14</option>
+                <option value="12">15</option>
+            </select>
+            <select class="input-lg" name="t3">
+                <option value="Y">Year(s)</option>
+                <option value="M">Month(s)</option>
+                <option value="W">Week(s)</option>
+                <option value="D">Day(s)</option>
+            </select>.
+            </td></tr>
+            </table>
+            <hr>
+            <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" value="Donate" border="0" name="submit" alt="PayPal - The safer, easier way to 
+            pay online!" class="donate-btn"> You will be redirected to PayPal's website.
+        </form>
+    </div>
+</div></div>
+
+</div>

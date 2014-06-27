@@ -25,29 +25,25 @@ myApp.config(['$routeProvider', '$locationProvider', '$httpProvider', function (
     $routeProvider.when('/', {
         templateUrl:'partials/home.html'
     });
-
     $routeProvider.when('/fs2', {
         templateUrl:'partials/fs2/fs2.html',
         controller: 'FS2Controller'
     });
-
     $routeProvider.when('/contact', {
         templateUrl:'partials/contact.html'
     });
     $routeProvider.when('/about', {
         templateUrl:'partials/about.html'
     });
-    $routeProvider.when('/faq', {
-        templateUrl:'partials/faq.html'
+    $routeProvider.when('/donate', {
+        templateUrl:'partials/donate.html'
     });
-
-    // note that to minimize playground impact on app.js, we
-    // are including just this simple route with a parameterized 
-    // partial value (see playground.js and playground.html)
-    $routeProvider.when('/playground/:widgetName', {
-        templateUrl:'playground/playground.html',
-        controller:'PlaygroundCtrl'
+    $routeProvider.when('/events', {
+        templateUrl:'partials/events.html'
     });
+    $routeProvider.when('/mission', {
+        templateUrl:'partials/mission.html'
+    })
 
     // by default, redirect to site root
     $routeProvider.otherwise({
@@ -78,40 +74,6 @@ myApp.run(function ($rootScope, $location, $http, $timeout, AuthService, RESTSer
             $rootScope.listData = data;
         }
     );
-
-    // *****
-    // Initialize authentication
-    // *****
-    $rootScope.authService = AuthService;
-
-    // text input for login/password (only)
-    $rootScope.loginInput = 'user@gmail.com';
-    $rootScope.passwordInput = 'complexpassword';
-
-    $rootScope.$watch('authService.authorized()', function () {
-
-        // if never logged in, do nothing (otherwise bookmarks fail)
-        if ($rootScope.authService.initialState()) {
-            // we are public browsing
-            return;
-        }
-
-        // instantiate and initialize an auth notification manager
-        $rootScope.authNotifier = new NotificationManager($rootScope);
-
-        // when user logs in, redirect to home
-        if ($rootScope.authService.authorized()) {
-            $location.path("/");
-            $rootScope.authNotifier.notify('information', 'Welcome ' + $rootScope.authService.currentUser() + "!");
-        }
-
-        // when user logs out, redirect to home
-        if (!$rootScope.authService.authorized()) {
-            $location.path("/");
-            $rootScope.authNotifier.notify('information', 'Thanks for visiting.  You have been signed out.');
-        }
-
-    }, true);
 
     // TODO move this out to a more appropriate place
     $rootScope.faq = [
