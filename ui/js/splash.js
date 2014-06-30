@@ -20,11 +20,6 @@ function fbhandleMDown()
  document.images["fbicon"].src = fbdownImage.src;
  return true;
 }
-function fbhandleMUp()
-{
- fbchangeImage();
- return true;
-}
 
 igupImage = new Image();
 igupImage.src = "/ui/img/igact.png";
@@ -48,11 +43,6 @@ function ighandleMDown()
  document.images["igicon"].src = igdownImage.src;
  return true;
 }
-function ighandleMUp()
-{
- igchangeImage();
- return true;
-}
 
 twupImage = new Image();
 twupImage.src = "/ui/img/twact.png";
@@ -74,10 +64,5 @@ function twchangeImageBack()
 function twhandleMDown()
 {
  document.images["twicon"].src = twdownImage.src;
- return true;
-}
-function twhandleMUp()
-{
- twchangeImage();
  return true;
 }
