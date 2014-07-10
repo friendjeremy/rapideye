@@ -4,7 +4,12 @@ var util = require('util'),
     http = require('http'),
     fs = require('fs'),
     url = require('url'),
-    events = require('events');
+    events = require('events')
+    express = require('express'),
+    path = require('path'),
+    connect = require('connect'),
+    //piler = require('piler'),
+    minify = require('express-minify');
 
 var DEFAULT_PORT = process.env.PORT || 8000;
  
@@ -240,6 +245,24 @@ StaticServlet.prototype.writeDirectoryIndex_ = function (req, res, path, files) 
     res.write('</ol>');
     res.end();
 };
+var app = express();
+
+var oneDay = 86400000;
+
+app.engine('html', require('ejs').renderFile);
+app.set('views', __dirname + '/ui');
+
+
+app.use(express.static(__dirname + '/ui',
+{
+    //maxAge: oneDay
+}));
+
+app.get('/',
+    function(req, res)
+    {
+        res.render('index.html');
+    });
 
 // Must be last,
 main(process.argv);
