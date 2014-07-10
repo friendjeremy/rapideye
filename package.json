@@ -3,9 +3,7 @@
   "version": "0.0.0",
   "description": "melodyofhope.org 2.0",
   "main": "web-server.js",
-  "directories": {
-    "test": "test"
-  },
+
   "scripts": {
         "start": "node web-server.js",
         "postinstall": "bower cache clean && bower install"
@@ -14,9 +12,6 @@
     "type": "git",
     "url": "https://github.com/friendjeremy/moh2.git"
   },
-  "keywords": [
-    "moh"
-  ],
   "author": "jeremy-ottens",
   "license": "ISC",
   "bugs": {
