@@ -6,7 +6,6 @@
 
   "scripts": {
         "start": "node web-server.js",
-        "postinstall": "bower cache clean && bower install"
   },
   "repository": {
     "type": "git",
