@@ -10,7 +10,7 @@ var port = process.env.PORT || 8000;
 var oneDay = 86400000;
 
 app.engine('html', require('ejs').renderFile);
-app.set('views', __dirname + '/ui');
+app.set('views', __dirname + '/ui/partials');
 
 //app.use(express.compress());
 // app.use(minify(
