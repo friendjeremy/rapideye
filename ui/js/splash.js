@@ -1,9 +1,9 @@
 fbupImage = new Image();
-fbupImage.src = "/ui/img/fbact.png";
+fbupImage.src = "/img/fbact.png";
 fbdownImage = new Image();
-fbdownImage.src = "/ui/img/fbdown.png"
+fbdownImage.src = "/img/fbdown.png"
 fbnormalImage = new Image();
-fbnormalImage.src = "/ui/img/fbup.png";
+fbnormalImage.src = "/img/fbup.png";
  
 function fbchangeImage()
 {
@@ -22,11 +22,11 @@ function fbhandleMDown()
 }
 
 igupImage = new Image();
-igupImage.src = "/ui/img/igact.png";
+igupImage.src = "/img/igact.png";
 igdownImage = new Image();
-igdownImage.src = "/ui/img/igdown.png"
+igdownImage.src = "/img/igdown.png"
 ignormalImage = new Image();
-ignormalImage.src = "/ui/img/igup.png";
+ignormalImage.src = "/img/igup.png";
  
 function igchangeImage()
 {
@@ -45,11 +45,11 @@ function ighandleMDown()
 }
 
 twupImage = new Image();
-twupImage.src = "/ui/img/twact.png";
+twupImage.src = "/img/twact.png";
 twdownImage = new Image();
-twdownImage.src = "/ui/img/twdown.png"
+twdownImage.src = "/img/twdown.png"
 twnormalImage = new Image();
-twnormalImage.src = "/ui/img/twup.png";
+twnormalImage.src = "/img/twup.png";
  
 function twchangeImage()
 {

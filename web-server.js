@@ -245,24 +245,6 @@ StaticServlet.prototype.writeDirectoryIndex_ = function (req, res, path, files) 
     res.write('</ol>');
     res.end();
 };
-var app = express();
-
-var oneDay = 86400000;
-
-app.engine('html', require('ejs').renderFile);
-app.set('views', __dirname + '/ui');
-
-
-app.use(express.static(__dirname + '/ui',
-{
-    //maxAge: oneDay
-}));
-
-app.get('/',
-    function(req, res)
-    {
-        res.render('index.html');
-    });
 
 // Must be last,
 main(process.argv);
