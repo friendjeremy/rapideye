@@ -19,11 +19,11 @@ app.set('views', __dirname + '/ui/partials');
 // }));
 
 
-app.use(require('body-parser')());
+/*app.use(require('body-parser')());
 
 
 app.use(connect.urlencoded())
-app.use(connect.json())
+app.use(connect.json())*/
 
 
 
