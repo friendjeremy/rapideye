@@ -2,10 +2,10 @@
   "name": "moh2",
   "version": "0.0.0",
   "description": "melodyofhope.org 2.0",
-  "main": "web-server.js",
+  "main": "server.js",
 
   "scripts": {
-        "start": "node web-server.js"
+        "start": "node server.js"
   },
   "repository": {
     "type": "git",
