@@ -24,6 +24,7 @@
     "express-minify": "^0.0.7",
     "ejs": "^1.0.0",
     "body-parser": "^1.3.1",
-    "bower": "latest"
+    "bower": "latest",
+    "depd": "^0.3.0"
   }
 }
