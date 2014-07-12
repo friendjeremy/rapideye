@@ -3,6 +3,7 @@ var express = require('express'),
     connect = require('connect'),
     //piler = require('piler'),
     minify = require('express-minify');
+    depd = require('depd')
 
 var app = express();
 
