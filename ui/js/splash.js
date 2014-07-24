@@ -21,48 +21,25 @@ function fbhandleMDown()
  return true;
 }
 
-igupImage = new Image();
-igupImage.src = "/img/igact.png";
-igdownImage = new Image();
-igdownImage.src = "/img/igdown.png"
-ignormalImage = new Image();
-ignormalImage.src = "/img/igup.png";
+vimupImage = new Image();
+vimupImage.src = "/img/vimeoact.png";
+vimdownImage = new Image();
+vimdownImage.src = "/img/vimeoact.png"
+vimnormalImage = new Image();
+vimnormalImage.src = "/img/vimeoup.png";
  
-function igchangeImage()
+function vimchangeImage()
 {
-  document.images["igicon"].src= igupImage.src;
+  document.images["vimicon"].src= vimupImage.src;
   return true;
 }
-function igchangeImageBack()
+function vimchangeImageBack()
 {
-   document.images["igicon"].src = ignormalImage.src;
+   document.images["vimicon"].src = vimnormalImage.src;
    return true;
 }
-function ighandleMDown()
+function vimhandleMDown()
 {
- document.images["igicon"].src = igdownImage.src;
- return true;
-}
-
-twupImage = new Image();
-twupImage.src = "/img/twact.png";
-twdownImage = new Image();
-twdownImage.src = "/img/twdown.png"
-twnormalImage = new Image();
-twnormalImage.src = "/img/twup.png";
- 
-function twchangeImage()
-{
-  document.images["twicon"].src= twupImage.src;
-  return true;
-}
-function twchangeImageBack()
-{
-   document.images["twicon"].src = twnormalImage.src;
-   return true;
-}
-function twhandleMDown()
-{
- document.images["twicon"].src = twdownImage.src;
+ document.images["vimicon"].src = vimdownImage.src;
  return true;
 }

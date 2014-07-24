@@ -35,15 +35,36 @@ myApp.config(['$routeProvider', '$locationProvider', '$httpProvider', function (
     $routeProvider.when('/about', {
         templateUrl:'partials/about.html'
     });
-    $routeProvider.when('/donate', {
-        templateUrl:'partials/donate.html'
+    $routeProvider.when('/film', {
+        templateUrl:'partials/film.html'
     });
-    $routeProvider.when('/events', {
-        templateUrl:'partials/events.html'
+    $routeProvider.when('/photo', {
+        templateUrl:'partials/photo.html'
     });
-    $routeProvider.when('/mission', {
-        templateUrl:'partials/mission.html'
-    })
+    $routeProvider.when('/weddingvideo', {
+        templateUrl:'partials/weddingvideo.html'
+    });
+    $routeProvider.when('/weddingphoto', {
+        templateUrl:'partials/weddingphoto.html'
+    });
+    $routeProvider.when('/projects', {
+        templateUrl:'partials/projects.html'
+    });
+    $routeProvider.when('/lostfound', {
+        templateUrl:'partials/lostfound.html'
+    });
+    $routeProvider.when('/personalfilm', {
+        templateUrl:'partials/personalfilm.html'
+    });
+    $routeProvider.when('/product', {
+        templateUrl:'partials/product.html'
+    });
+    $routeProvider.when('/portrait', {
+        templateUrl:'partials/portrait.html'
+    });
+    $routeProvider.when('/music', {
+        templateUrl:'partials/music.html'
+    });
 
     // by default, redirect to site root
     $routeProvider.otherwise({
